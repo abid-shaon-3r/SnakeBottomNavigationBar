@@ -45,7 +45,10 @@ class SnakeShape {
       shape: null, type: SnakeShapeType.rectangle, centered: false);
 
   static const SnakeShape indicator = SnakeShape._(
-      shape: null, type: SnakeShapeType.indicator, centered: false);
+      shape: null,
+      type: SnakeShapeType.indicator,
+      centered: false,
+      padding: EdgeInsets.only(top: 5.0));
 }
 
 enum SnakeShapeType { circle, rectangle, indicator, custom }
